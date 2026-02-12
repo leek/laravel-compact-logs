@@ -1,0 +1,30 @@
+{
+    "name": "leek/laravel-compact-logs",
+    "description": "Truncate verbose stack traces in Laravel log files for cleaner, more readable logs.",
+    "keywords": ["laravel", "logging", "monolog", "stack-trace", "compact"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leek"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/log": "^11.0|^12.0",
+        "monolog/monolog": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leek\\CompactLogs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leek\\CompactLogs\\CompactLogsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
