@@ -12,8 +12,8 @@ class CompactExceptionFormatter extends LineFormatter
     public function __construct(
         private int $maxTraceDepth = 3,
         ?string $format = null,
-        ?string $dateFormat = null,
-        bool $allowInlineLineBreaks = true,
+        ?string $dateFormat = 'Y-m-d H:i:s',
+        bool $allowInlineLineBreaks = false,
         bool $ignoreEmptyContextAndExtra = true,
     ) {
         parent::__construct($format, $dateFormat, $allowInlineLineBreaks, $ignoreEmptyContextAndExtra);
