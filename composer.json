@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/log": "^11.0|^12.0",
+        "illuminate/log": "^11.0|^12.0|^13.0",
         "monolog/monolog": "^3.0"
     },
     "autoload": {
